@@ -11,7 +11,7 @@ function alphabetPosition(text) {
     .map((a) => a.split(""))
     .map((a) => a.map((b) => values[b.toLowerCase()]))
   	.flat()
-  	.filter((a) => a !== undefined)
+    .filter((a) => a !== undefined)
     .join(" ")
     .replace(/,/g, " ")
 }
